@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.wordList;
 
 import org.junit.jupiter.api.Test;
 

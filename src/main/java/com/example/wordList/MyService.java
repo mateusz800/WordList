@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.wordList;
 
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
