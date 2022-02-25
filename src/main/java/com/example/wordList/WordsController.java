@@ -9,17 +9,20 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.util.Map;
+import java.util.stream.Stream;
 
 @RestController
-public class MyController{
+public class WordsController {
 
     @Autowired
-    MyService myService;
+    WordsService wordsService;
 
     @PostMapping(path = "/wordList")
     public ResponseEntity<?> calcWorldList(@RequestParam("file") MultipartFile file){
         try {
-            Map<String, Long> result = myService.calcWordFreqList(file);
+            Stream<String> inputStream = wordsService.openFileStream(file);
+            Map<String, Long> result = wordsService.calcWordFreqList(inputStream);
+            inputStream.close();
             return new ResponseEntity<>(result, HttpStatus.OK);
         } catch (Exception e) {
             e.printStackTrace();
