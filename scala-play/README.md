@@ -30,6 +30,10 @@ Sample response:
 }
 ```
 
+## Running test
+```bash
+sbt run
+```
 
 
 
