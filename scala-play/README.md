@@ -1,5 +1,6 @@
 # Word List API
 
+[![Scala CI](https://github.com/mateusz800/WordList/actions/workflows/scala.yml/badge.svg)](https://github.com/mateusz800/WordList/actions/workflows/scala.yml)
 
 API with single endpoint that returns a list of words in posted txt file ordered (descending) by
 frequency of occurrences. Project created using Scala and Play framework.
