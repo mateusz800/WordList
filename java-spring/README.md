@@ -1,5 +1,7 @@
 # Word List API
 
+[![Java CI with Gradle](https://github.com/mateusz800/WordList/actions/workflows/gradle.yml/badge.svg)](https://github.com/mateusz800/WordList/actions/workflows/gradle.yml)
+
 API with single endpoint that returns a list of words in posted txt file ordered (descending) by 
 frequency of occurrences. Project created using Spring Boot framework.
 
